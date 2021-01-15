@@ -1,0 +1,11 @@
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\bin\Debug\netcoreapp3.1\21.01.15_HelloWorld.exe
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\bin\Debug\netcoreapp3.1\21.01.15_HelloWorld.deps.json
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\bin\Debug\netcoreapp3.1\21.01.15_HelloWorld.runtimeconfig.json
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\bin\Debug\netcoreapp3.1\21.01.15_HelloWorld.runtimeconfig.dev.json
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\bin\Debug\netcoreapp3.1\21.01.15_HelloWorld.dll
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\bin\Debug\netcoreapp3.1\21.01.15_HelloWorld.pdb
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\obj\Debug\netcoreapp3.1\21.01.15_HelloWorld.csprojAssemblyReference.cache
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\obj\Debug\netcoreapp3.1\21.01.15_HelloWorld.AssemblyInfoInputs.cache
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\obj\Debug\netcoreapp3.1\21.01.15_HelloWorld.AssemblyInfo.cs
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\obj\Debug\netcoreapp3.1\21.01.15_HelloWorld.dll
+C:\Users\GIGABYTE\Desktop\Study\algorithm\c++\단계별_문제\21.01.15_HelloWorld\21.01.15_HelloWorld\obj\Debug\netcoreapp3.1\21.01.15_HelloWorld.pdb
