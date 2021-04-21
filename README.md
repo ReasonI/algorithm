@@ -17,9 +17,9 @@
 
 | 월 | 화 | 수 | 목 | 금 | 토 | 일 | | 책 진도
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|  |  |   |<span style="color:black"> 22<br><input type="checkbox" checked>  |<span style="color:black">23<br><input type="checkbox">|<span style="color:black">24<br><input type="checkbox">|<span style="color:black">25<br><input type="checkbox">||  ch.1<br><input type="checkbox">
+|  |  |   |<span style="color:blue"> 22<br><input type="checkbox" checked>  |<span style="color:black">23<br><input type="checkbox">|<span style="color:black">24<br><input type="checkbox">|<span style="color:black">25<br><input type="checkbox">||  ch.1<br><input type="checkbox">
 | <span style="color:black"> 26<br><input type="checkbox"> | <span style="color:black">27<br><input type="checkbox"> |<span style="color:black"> 28<br><input type="checkbox"> |<span style="color:black">29<br><input type="checkbox">|<span style="color:black">30<br><input type="checkbox">|<span style="color:black">1<br><input type="checkbox">|<span style="color:black">2<br><input type="checkbox">||ch.2<br><input type="checkbox">
-<br>
+
 ## 5월
 
 | 월 | 화 | 수 | 목 | 금 | 토 | 일 | | 책 진도
@@ -30,7 +30,7 @@
 | <span style="color:black"> 17<br><input type="checkbox"> | <span style="color:black">18<br><input type="checkbox"> |<span style="color:black"> 19<br><input type="checkbox"> |<span style="color:black">20<br><input type="checkbox">|<span style="color:black">21<br><input type="checkbox">|<span style="color:black">22<br><input type="checkbox">|<span style="color:black">23<br><input type="checkbox">||ch.5<br><input type="checkbox">|
 | <span style="color:black"> 24<br><input type="checkbox"> | <span style="color:black">25<br><input type="checkbox"> |<span style="color:black"> 26<br><input type="checkbox"> |<span style="color:black">27<br><input type="checkbox">|<span style="color:black">28<br><input type="checkbox">|<span style="color:black">29<br><input type="checkbox">|<span style="color:black">30<br><input type="checkbox">||ch.6<br><input type="checkbox">|
 |<span style="color:black">31<br><input type="checkbox">|||||
-<br>
+
 ## 6월
 
 | 월 | 화 | 수 | 목 | 금 | 토 | 일 | | 책 진도
