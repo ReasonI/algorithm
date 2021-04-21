@@ -17,7 +17,7 @@
 
 | 월 | 화 | 수 | 목 | 금 | 토 | 일 | | 책 진도
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|  |  |   |***22*** |- [ ]23<br>ㅇㄹ<input type="checkbox">|<span style="color:black">24<br><input type="checkbox">|<span style="color:black">25<br><input type="checkbox">||  ch.1<br><input type="checkbox">
+|  |  |   |***22*** |- [X]23<br>ㅇㄹ<input type="checkbox">|<span style="color:black">24<br><input type="checkbox">|<span style="color:black">25<br><input type="checkbox">||  ch.1<br><input type="checkbox">
 | <span style="color:black"> 26<br><input type="checkbox"> | <span style="color:black">27<br><input type="checkbox"> |<span style="color:black"> 28<br><input type="checkbox"> |<span style="color:black">29<br><input type="checkbox">|<span style="color:black">30<br><input type="checkbox">|<span style="color:black">1<br><input type="checkbox">|<span style="color:black">2<br><input type="checkbox">||ch.2<br><input type="checkbox">
 
 ## 5월
