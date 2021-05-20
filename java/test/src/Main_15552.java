@@ -4,9 +4,10 @@ import java.util.StringTokenizer;
 public class Main_15552 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int T = Integer.parseInt(br.readLine());
+
+        StringBuilder sb = new StringBuilder();
 
         for(int i = 0; i < T; i++){
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -14,13 +15,9 @@ public class Main_15552 {
             int A = Integer.parseInt(st.nextToken());
             int B = Integer.parseInt(st.nextToken());
 
-            bw.write(A+B+"");
+            System.out.println(A+B);
         }
 
-
-
-        bw.flush();
         br.close();
-        bw.close();
     }
 }
