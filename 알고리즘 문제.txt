@@ -1,0 +1,39 @@
+
+1. 위상 정렬 >> 2문제
+https://www.youtube.com/watch?v=HxHISRelNuM
+https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
+
+2. 기수 정렬
+기수 정렬은 숫자의 자릿수를 비교하여 요소를 정렬합니다. 정수에 대한 선형 정렬 알고리즘 중 하나입니다.
+
+3. 재귀
+https://www.acmicpc.net/problem/2447
+
+4. 완전탐색 알고리즘 - 재귀,bitmask로 풀이
+https://www.acmicpc.net/problem/2309
+
+https://whereisusb.tistory.com/214
+
+5. Binary Heap과 Binary Search Tree는 각각 어떠한 경우에 사용하는게 좋나요?
+Heap은 최대 및 최소 노드를 연산(O(1), heapify를 포함한다면 O(log n))하는데 유용하지만, 
+BST는 모든 노드를 연산(O(log n))하는데 유용합니다.
+
+6. Hash Collision Resolve 방식에는 어떠한 방법이 존재하나요?
+--a. Open Address 방식 (개방 주소법)
+
+해시 충돌이 발생하면 다른 해시 버킷에 해당 자료를 삽입하는 방식입니다. 
+다른 해시 버킷을 찾기 위해 다양한 방법이 존재하는데 대표적인 방법으로는 순차적으로 비어있는 버킷을 찾을 때까지 계속 탐색하는 Linear Probing 방식이 존재합니다.
+해시 버킷을 채운 밀도가 높아질수록 Worst Case 발생 빈도가 높아지기 때문에 시간 복잡도가 O(n)에 가까워진다.
+
+--b. Separate Chaining 방식 (분리 연결법)
+
+Hash Table의 각 버킷이 여러 값을 저장할 수 있는 자료 구조를 가리키도록 만드는 방법을 의미합니다. 
+이를 구현할 수 있는 방법으로는 LinkedList를 사용하는 방식과 Tree를 사용하는 방식이 존재합니다. 
+Java util 에서는 HashMap을 Separate Chaining 방식을 사용하여 구현하고 있습니다.
+Separate Chaining Using LinkedList : 각각의 버킷들을 LinkedList로 만들어 충돌(Collision)이 발생하면 해당 bucket의 list에 값을 추가하는 방식이다.
+Separate Chaining Using Tree : 각각의 버킷들을 Tree로 만들어 충돌(Collision)이 발생하면 해당 bucket의 tree에 값을 추가하는 방식입니다.
+Tree는 LinkedList에 비해 메모리 사용량이 많기 때문에 데이터 개수가 적을 때는 링크드리스트를 사용하는게 유리하지만, 
+개수가 많을 경우 Tree의 시간 복잡도가 LinkedList보다 빠르기 때문에 Tree를 사용하는게 더 유리하다.
+
+7. TreeMap과 TreeSet의 공통점과 차이는 무엇인가요?
+TreeSet과 TreeMap은 모두 Red Black Tree를 기반으로하는 자료구조입니다. 가장 큰 차이라고 하면 Set과 Map의 차이입니다.
