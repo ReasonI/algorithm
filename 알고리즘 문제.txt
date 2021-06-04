@@ -1,7 +1,12 @@
 
 1. 위상 정렬 >> 2문제
+인접 행렬을 쓰게 되면 o(v제곱)이 되기 때문에 꼭 인접 리스트를 사용해야 한다.
 https://www.youtube.com/watch?v=HxHISRelNuM
 https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
+
+1-1. 인접행렬과 인접 리스트를 비교하고 장단점을 말하세요
+https://sarah950716.tistory.com/12
+https://freestrokes.tistory.com/87
 
 2. 기수 정렬
 기수 정렬은 숫자의 자릿수를 비교하여 요소를 정렬합니다. 정수에 대한 선형 정렬 알고리즘 중 하나입니다.
