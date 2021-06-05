@@ -4,6 +4,8 @@
 https://www.youtube.com/watch?v=HxHISRelNuM
 https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
 
+https://www.acmicpc.net/problem/2252
+
 1-1. 인접행렬과 인접 리스트를 비교하고 장단점을 말하세요
 https://sarah950716.tistory.com/12
 https://freestrokes.tistory.com/87
