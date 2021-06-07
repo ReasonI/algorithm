@@ -4,14 +4,18 @@
 https://www.youtube.com/watch?v=HxHISRelNuM
 https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
 
-https://www.acmicpc.net/problem/2252
+백준 : https://www.acmicpc.net/problem/2252
+백준 : https://www.acmicpc.net/problem/2056
 
 1-1. 인접행렬과 인접 리스트를 비교하고 장단점을 말하세요
 https://sarah950716.tistory.com/12
 https://freestrokes.tistory.com/87
 
+>> https://stackoverflow.com/questions/2218322/what-is-better-adjacency-lists-or-adjacency-matrices-for-graph-problems-in-c
+
 2. 기수 정렬
 기수 정렬은 숫자의 자릿수를 비교하여 요소를 정렬합니다. 정수에 대한 선형 정렬 알고리즘 중 하나입니다.
+https://www.acmicpc.net/problem/2751
 
 3. 재귀
 https://www.acmicpc.net/problem/2447
@@ -22,8 +26,9 @@ https://www.acmicpc.net/problem/2309
 https://whereisusb.tistory.com/214
 
 5. Binary Heap과 Binary Search Tree는 각각 어떠한 경우에 사용하는게 좋나요?
-Heap은 최대 및 최소 노드를 연산(O(1), heapify를 포함한다면 O(log n))하는데 유용하지만, 
+Heap은 최대 및 최소 노드를 연산(O(1), heapify를 포함한다면 O(log n))하는데 유용하지만,
 BST는 모든 노드를 연산(O(log n))하는데 유용합니다.
+https://stackoverflow.com/questions/6147242/heap-vs-binary-search-tree-bst
 
 6. Hash Collision Resolve 방식에는 어떠한 방법이 존재하나요?
 --a. Open Address 방식 (개방 주소법)
