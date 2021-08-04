@@ -6,22 +6,18 @@ class Solution_더맵게 {
 
         Arrays.sort(scoville);
 
-        Stack<Integer> scoStack = new Stack<>();
+        PriorityQueue<Integer> scoHeap = new PriorityQueue<>();
 
-        for(int i = scoville.length - 1 ; i > -1; i--){
-            scoStack.push(scoville[i]);
+        for(int scov : scoville){
+            scoHeap.offer(scov);
         }
 
-        while(true){
-            if(scoStack.size() < 2){
+        while(scoHeap.peek() < K){
+            if(scoHeap.size() < 2){
                 return -1;
             }
-            if(scoStack.peek() < 7){
-                scoStack.push(scoStack.pop() + scoStack.pop() * 2);
-                answer++;
-            }else{
-                break;
-            }
+            scoHeap.offer(scoHeap.poll() + scoHeap.poll() * 2);
+            answer++;
 
         }
         return answer;
