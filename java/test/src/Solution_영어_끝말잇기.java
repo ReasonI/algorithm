@@ -1,27 +1,23 @@
-class Solution_영어_끝말잇기 {
+import java.util.HashSet;
+
+class Solution {
     public int[] solution(int n, String[] words) {
-        int[] answer = {0,0};
+        int[] answer = new int[2];
+        HashSet<String> set = new HashSet<>();
 
-        char last = ' ';
-        char first = ' ';
+        set.add(words[0]);
 
-        for(int i = 0; i < words.length; i++){
-            if (last == ' '){
-                last = words[i].charAt(words[i].length() - 1);
-                continue;
-            }else{
-                first = words[i].charAt(0);
+        for (int i = 1; i < words.length; i++) {
 
-                if(first != last){
-                    answer[0] = i % n;
-                    answer[1] = i / n;
-                }
+            if (set.contains(i) || words[i - 1].charAt(words[i - 1].length() - 1) != words[i].charAt(0)) {
+                answer[0] = i % n + 1;
+                answer[1] = i / n + 1;
+
+                break;
             }
+            set.add(words[i]);
 
-            last = words[i].charAt(words[i].length() - 1);
         }
-
-        System.out.println("Hello Java");
 
         return answer;
     }
