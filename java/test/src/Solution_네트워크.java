@@ -4,8 +4,6 @@ class Solution_네트워크 {
             if(computers[idx][j] == 1 && !network[j]){
                 network[j] = true;
                 dfs(j, computers, network);
-            }else if(j == computers.length - 1){
-                return;
             }
         }
     }
