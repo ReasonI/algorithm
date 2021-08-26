@@ -1,5 +1,8 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main_1260 {
@@ -7,6 +10,8 @@ public class Main_1260 {
 
     static boolean[] visited;
     static int N, edgeNum, V;
+
+    static Queue<Integer> bfsQ = new LinkedList<Integer>();
 
     public static void main(String[] args) throws Exception {
 
@@ -35,12 +40,11 @@ public class Main_1260 {
 
         //dfs 실행
         dfs(V);
-//        for(int i = 1; i < N + 1; i++){
-//            if(!visited[i]){
-//                dfs(i);
-//            }
-//        }
+        System.out.println("");
+
         //bfs 실행
+        Arrays.fill(visited, false);
+        bfs(V);
 
     }
 
@@ -60,6 +64,19 @@ public class Main_1260 {
     private static void bfs(int i) {
         visited[i] = true;
 
-        System.out.print(i + " ");
+        bfsQ.add(i);
+
+        while (!bfsQ.isEmpty()) {
+            int temp = bfsQ.poll();
+
+            System.out.print(temp + " ");
+
+            for (int j = 1; j < N + 1; j++) {
+                if (graph[temp][j] == 1 && !visited[j]) {
+                    bfsQ.add(j);
+                    visited[j] = true;
+                }
+            }
+        }
     }
 }
