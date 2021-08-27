@@ -38,7 +38,7 @@ public class Main_2178 {
         for (int i = 0; i < N; i++) {
             String st2 = br.readLine();
             for (int j = 0; j < M; j++) {
-                graph[i][j] = st2.charAt(0) - '0';
+                graph[i][j] = st2.charAt(j) - '0';
             }
         }
 
@@ -69,19 +69,20 @@ public class Main_2178 {
             y = location.y;
 
             for (int i = 0; i < 4; i++) {
-                nextX += dx[i];
-                nextY += dy[i];
+                nextX = x + dx[i];
+                nextY = y + dy[i];
                 if(!check(nextX, nextY)) continue;
 
-                if (graph[nextX][nextY] == 0 || visited[nextX][nextY]) continue;
+                if (graph[nextY][nextX] == 0 || visited[nextY][nextX]) continue;
 
                 bfsQ.add(new Location(nextX, nextY));
-                visited[nextX][nextY] = true;
-                count[nextX][nextY] = count[x][y] + 1;
+                visited[nextY][nextX] = true;
+                count[nextY][nextX] = count[y][x] + 1;
             }
 
-            System.out.print(count[N - 1][M - 1]);
+
         }
+        System.out.print(count[N - 1][M - 1]);
     }
 
     private static boolean check(int x, int y) {
