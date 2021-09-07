@@ -1,21 +1,17 @@
 import java.util.Scanner;
 
-public class Main_2439 {
+public class Main_2440 {
     public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);
 
         int num = sc.nextInt();
 
-        for(int i = 1; i < num+1; i++){
-            for(int j = 0; j < num - i; j++){
-                System.out.print(" ");
-            }
-            for(int k = num - i; k < num; k++){
+        for(int i = num; i > 0; i--){
+            for(int j = i; j > 0; j--){
                 System.out.print("*");
             }
             System.out.println("");
-
         }
 
     }
