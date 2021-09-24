@@ -1,6 +1,5 @@
 import java.io.*;
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main_1966 {
@@ -11,8 +10,8 @@ public class Main_1966 {
 
         int tc = Integer.parseInt(br.readLine());
 
-        int[] numArray;
         int count;
+        boolean isMax;
 
         for (int i = 0; i < tc; i++) {
 
@@ -21,17 +20,37 @@ public class Main_1966 {
 
             int num = Integer.parseInt(st.nextToken());
             int target = Integer.parseInt(st.nextToken());
-            count = 1;
+            count = 0;
 
-            LinkedList<Integer[]> queue = new LinkedList<>();
-
-            numArray = new int[num];
-
-            for(int x = 0; x < num; x++){
-                queue.add(new Integer[] {x, Integer.parseInt(st2.nextToken())});
-            }
+            LinkedList<int[]> queue = new LinkedList<>();
 
             for(int j = 0; j < num; j++){
+                queue.add(new int[] {j, Integer.parseInt(st2.nextToken())});
+            }
+
+            while(!queue.isEmpty()){
+
+                int[] first = queue.poll();
+                isMax = true;
+
+                for(int j = 0; j < queue.size(); j++){
+                    if(first[1] < queue.get(j)[1]){
+
+                        queue.offer(first);
+
+                        for(int x = 0; x < j; x++){
+                            queue.offer(queue.poll());
+                        }
+
+                        isMax = false;
+                        break;
+                    }
+                }
+
+                if(!isMax) continue;
+
+                count++;
+                if(first[0] == target) break;
 
             }
 
