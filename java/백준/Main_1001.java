@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Main_1000 {
+public class Main_1001 {
 
     public static void main(String args[]) throws IOException {
 
@@ -12,7 +12,7 @@ public class Main_1000 {
         int A = Integer.parseInt(st.nextToken());
         int B = Integer.parseInt(st.nextToken());
 
-        System.out.println(A+B);
+        System.out.println(A-B);
 
         br.close();
 
