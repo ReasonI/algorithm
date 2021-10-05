@@ -1,22 +1,18 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Main_1152 {
+public class Main_10998 {
 
     public static void main(String args[]) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int count = 0;
-        String temp = "";
 
-        while(st.hasMoreTokens()){
-            temp = st.nextToken();
-            count++;
-        }
+        int A = Integer.parseInt(st.nextToken());
+        int B = Integer.parseInt(st.nextToken());
 
-        System.out.println(count);
+        System.out.println(A*B);
 
         br.close();
 
