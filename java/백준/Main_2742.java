@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main_2741 {
+public class Main_2742 {
 
     public static void main(String args[]) throws IOException {
 
@@ -8,7 +8,7 @@ public class Main_2741 {
 
         int N = Integer.parseInt(br.readLine());
 
-        for (int i = 1; i < N + 1; i++) {
+        for (int i = N; i > 0; i--) {
             System.out.println(i);
         }
 
