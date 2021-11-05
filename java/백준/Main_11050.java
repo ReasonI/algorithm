@@ -3,24 +3,27 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_2869 {
+public class Main_11050 {
 
     public static void main(String args[]) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int day = Integer.parseInt(st.nextToken());
-        int night = Integer.parseInt(st.nextToken());
-        int length = Integer.parseInt(st.nextToken());
+        int N = Integer.parseInt(st.nextToken());
+        int K = Integer.parseInt(st.nextToken());
 
-        int cal = 0;
+        int answer = 1;
 
-        cal = (length - night) / (day - night);
+        for(int i = N; i > K; i--){
+            answer *= i;
+        }
 
-        if ((length - night) % (day - night) != 0) cal++;
+        for(int i = 2; i <= N - K; i++){
+            answer /= i;
+        }
 
-        System.out.print(cal);
+        System.out.print(answer);
 
     }
 
