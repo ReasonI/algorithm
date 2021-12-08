@@ -13,7 +13,7 @@ public class Main_10816 {
 
         NArray = new int[N];
 
-        for(int i = 0; i < N; i++){
+        for (int i = 0; i < N; i++) {
             NArray[i] = sc.nextInt();
         }
 
@@ -21,21 +21,48 @@ public class Main_10816 {
 
         int M = sc.nextInt();
 
-        for(int i = 0; i < M; i++){
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < M; i++) {
             int target = sc.nextInt();
-            System.out.print(upperBinarySearch(target) - lowerBinarySearch(target) + " ");
+            sb.append(lowerBinarySearch(target) - upperBinarySearch(target)).append(' ');
         }
 
-    }
-
-    public static int upperBinarySearch(int target){
+        System.out.println(sb);
 
     }
 
-    public static int lowerBinarySearch(int target){
+    public static int upperBinarySearch(int target) {
+
+        int low = 0;
+        int high = NArray.length;
+
+        while (low < high) {
+            int mid = (low + high) / 2;
+
+            if (target <= NArray[mid]) high = mid;
+            else low = mid + 1;
+
+        }
+
+        return low;
 
     }
 
+    public static int lowerBinarySearch(int target) {
 
+        int low = 0;
+        int high = NArray.length;
+
+        while(low < high) {
+            int mid = (low + high) / 2;
+
+            if(target < NArray[mid]) high = mid;
+            else low = mid + 1;
+        }
+
+        return low;
+
+    }
 
 }
